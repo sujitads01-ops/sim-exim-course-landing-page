@@ -1,15 +1,11 @@
-# [Project name]
+# SIM EXIM Course Landing Page
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+A responsive landing page for Skills Institute of Management’s practical Import–Export (EXIM) training course, with course information and an enquiry form.
 
 ## Run & Operate
 
-- `pnpm --filter @workspace/api-server run dev` — run the API server (port 5000)
+- `pnpm --filter @workspace/sim-exim-course run dev` — run the landing page
 - `pnpm run typecheck` — full typecheck across all packages
-- `pnpm run build` — typecheck + build all packages
-- `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from the OpenAPI spec
-- `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
-- Required env: `DATABASE_URL` — Postgres connection string
 
 ## Stack
 
@@ -22,23 +18,28 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/sim-exim-course/src/App.tsx` — landing page and interactions
+- `artifacts/sim-exim-course/src/index.css` — responsive visual styles
+- `artifacts/sim-exim-course/INTEGRATION.md` — enquiry form connection requirements
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- The enquiry form must not imply that a lead was sent unless a real submission endpoint confirms it.
+- Course and trainer claims remain limited to information supplied in the approved brief; unverified details stay marked for confirmation.
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+The single-page site introduces the EXIM course, explains its curriculum and practical simulation, answers common questions, and provides an enquiry form that is ready for an approved submission service.
 
 ## User preferences
 
-_Populate as you build — explicit user instructions worth remembering across sessions._
+- Build only the EXIM course landing page at this stage; do not create other SIM website pages until this page is reviewed and approved.
+- Do not invent placement, salary, success, trainer-experience, contact, schedule, fee, or credential claims.
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
+- The separate SIM EXIM design-draft PDF referenced in the supplied prompt was not provided; the prompt is the current content and structure source.
+- The form’s preferred date and time are counselling preferences, not confirmed appointments.
 
 ## Pointers
 

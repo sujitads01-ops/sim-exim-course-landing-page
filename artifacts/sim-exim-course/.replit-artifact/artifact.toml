@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "SIM EXIM Course"
+description = "A responsive Skills Institute of Management landing page for its practical import–export training course, with curriculum details and a student enquiry form."
+version = "1.0.0"
+id = "artifacts/sim-exim-course"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21858
+
+[services.development]
+run = "pnpm --filter @workspace/sim-exim-course run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/sim-exim-course", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/sim-exim-course/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21858"
+BASE_PATH = "/"

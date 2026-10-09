@@ -1,0 +1,337 @@
+# Prompt: Design and Develop the SIM EXIM Course Landing Page
+
+Create a complete, modern, responsive website landing page for **Skills Institute of Management (SIM)** to promote its practical Import–Export (EXIM) Training Course and generate student enquiries.
+
+Use the attached **SIM EXIM Course Landing Page Design Draft PDF** as the primary reference for the content, page structure, section hierarchy, and form fields. Follow the design direction closely while making the website polished, visually engaging, professional, and conversion-focused.
+
+## 1. Brand and Visual Direction
+
+Design a premium education and professional training website.
+
+- Primary colour: dark navy blue `#102A43`
+- Secondary colour: professional blue `#1769AA`
+- Background: white and very light blue `#F5F9FD`
+- Accent colour: warm gold `#F5B544`
+- Typography: Inter, Manrope, or a similar modern sans-serif font
+- Use generous whitespace, strong headings, clean cards, subtle shadows, thin borders, and consistent spacing.
+- Avoid excessive gradients, unnecessary animations, cluttered layouts, and generic AI-generated design patterns.
+- The website should feel trustworthy, practical, and business-oriented rather than like a generic coaching institute template.
+
+## 2. Header and Navigation
+
+Create a clean, sticky header with:
+
+- SIM logo or a simple text-based logo placeholder
+- Home
+- About SIM
+- EXIM Course
+- Course Curriculum
+- Trainer
+- Contact
+
+Add a prominent blue button: **Enquire Now**
+
+On mobile, convert the navigation into a working hamburger menu.
+
+## 3. Hero Section
+
+Use a two-column desktop layout.
+
+Left column:
+
+Eyebrow:
+**PRACTICAL IMPORT–EXPORT & EXIM TRAINING**
+
+Main headline:
+**Learn Global Trade. Build Your EXIM Business Foundation.**
+
+Supporting paragraph:
+“A structured, practical course to understand the export–import process—from choosing a product and researching markets to buyer verification, documentation, shipping, costing and building a 90-day action plan.”
+
+Primary CTA: **Enquire About the Course**
+
+Secondary CTA: **Explore Course Curriculum**
+
+Add a short supporting line:
+“Learn the key stages of an import–export transaction through structured modules and a practical trade simulation.”
+
+Right column:
+
+Create a premium visual representing international trade, using a combination of shipping containers, a cargo ship, a world map, trade routes, logistics, and business documentation. Use authentic-looking photography or polished custom visuals. Avoid cartoon-style illustrations.
+
+Ensure the hero is balanced, with strong text hierarchy and clear calls to action.
+
+## 4. Large Statistics and Numbers Section
+
+Directly below the hero, create a horizontal row of three or four prominent statistic cards.
+
+Use these verified course-structure figures:
+
+- **10** — Core Learning Modules
+- **90 Days** — Action Plan Framework
+- **Practical** — EXIM Business Simulation
+
+Add a fourth statistic only after the institute confirms a factual claim, such as verified trainer experience or placement support.
+
+Important:
+- Do not invent student counts, placement percentages, salary figures, success rates, or years of experience.
+- Do not display “100% Placement” unless SIM confirms that the claim is accurate and supported by evidence.
+- If verified later, make the placement statistic visually prominent without presenting it as a guarantee unless the institute can substantiate that guarantee.
+
+Use large numbers, concise labels, and a clean white or pale-blue background.
+
+## 5. Course Enquiry Form
+
+Create a prominent course enquiry form immediately after the statistics section. On desktop, use a two-column layout: course information on the left and the enquiry form on the right. On mobile, stack the form below the introduction.
+
+Form heading:
+**Enquire About the EXIM Course**
+
+Supporting text:
+“Share your details and preferred counselling slot. Our team can follow up with course information.”
+
+Required fields:
+
+1. Full Name
+2. Phone Number / WhatsApp Number
+3. Email Address
+4. Course Selection — default option: EXIM / Import–Export Course
+5. Preferred Counselling Date — calendar date picker
+6. Preferred Time — dropdown containing:
+   - Morning
+   - Afternoon
+   - Evening
+   - No Preference
+
+Add a checkbox for consent to be contacted about course information.
+
+Submit button:
+**Request Course Details**
+
+Requirements:
+- Validate required fields and email/phone formats.
+- Prevent users from selecting past dates.
+- Show clear validation messages.
+- Display a success message only after the form has been successfully submitted to the configured backend.
+- Do not falsely display a successful submission if the form is not connected.
+- Do not describe the preferred date and time as a confirmed appointment.
+- The date picker must work on desktop and mobile.
+
+If no backend is available, implement the front-end form and clearly document where email, CRM, WhatsApp, or database integration is required.
+
+## 6. Who Is This Course For?
+
+Create a section titled:
+
+**Who Is This Course For?**
+
+Show four clean cards:
+
+**Beginners Exploring EXIM**  
+Understand the fundamentals of international trade and the import–export process.
+
+**Aspiring Entrepreneurs**  
+Learn how product research, market research, buyer verification, and costing fit into an EXIM business.
+
+**Small Business Owners**  
+Build a clearer understanding of sourcing, documentation, shipping, and international transactions.
+
+**Professionals and Learners**  
+Develop structured knowledge of EXIM processes through practical, scenario-based learning.
+
+Use simple line icons and concise copy.
+
+## 7. Course Curriculum — 10 Modules
+
+Create a professional curriculum section with numbered cards or an accordion layout.
+
+Display all ten modules:
+
+**01. EXIM Fundamentals**  
+Understand export, import, trade terminology, and the overall transaction flow.
+
+**02. Business Models and Trade Opportunities**  
+Explore trading, sourcing, and different EXIM business approaches.
+
+**03. Business Setup and Registrations**  
+Review the setup steps and key registrations relevant to an EXIM business.
+
+**04. Product Selection, HS Codes, and Market Research**  
+Assess product ideas, market demand, HS classification, and initial market research.
+
+**05. Finding and Verifying Buyers and Suppliers**  
+Learn research methods and basic checks before engaging a trade partner.
+
+**06. International Payments and Risk**  
+Understand international payment methods and common transaction risks.
+
+**07. EXIM Documentation**  
+Learn the purpose of key documents used throughout a trade transaction.
+
+**08. Logistics, Shipping, and Customs**  
+Understand freight, shipment flow, and customs-related processes.
+
+**09. Incoterms, Costing, and Profitability**  
+Review trade terms, landed costs, quotation structure, and margin calculations.
+
+**10. Product Compliance and Business Planning**  
+Identify compliance questions and organise next steps into a practical plan.
+
+Each module card should include a number, title, short description, and appropriate icon. Keep the layout easy to scan.
+
+Do not invent lesson durations, module hours, or additional certifications.
+
+## 8. Practical EXIM Business Simulation
+
+Create a visually distinct section titled:
+
+**Put Your Knowledge Into Practice**
+
+Supporting copy:
+
+“Apply the course concepts to a sample trade scenario and understand how the different stages of an import–export transaction connect.”
+
+Show a three-step horizontal process:
+
+**Step 1 — Research**
+- Product and market research
+- Buyer verification
+- Supplier comparison
+- HS-code and compliance considerations
+
+**Step 2 — Prepare**
+- Cost estimation
+- Export quotation
+- Payment terms and Incoterms
+- Documentation and shipping checklist
+
+**Step 3 — Plan**
+- Indicative profitability review
+- Risk considerations
+- Missing-information checklist
+- 90-day action plan
+
+Use a connected timeline or process diagram with numbered stages.
+
+Clearly treat this as a sample educational simulation, not a guaranteed real buyer, actual order, or guaranteed business outcome.
+
+## 9. Why Learn With SIM?
+
+Create four benefit cards:
+
+**Structured Learning Path**  
+Move through core EXIM concepts in a clear sequence.
+
+**Process-Based Understanding**  
+Connect product research, partner checks, documentation, logistics, and costing.
+
+**Applied Practice**  
+Use a sample transaction scenario to practise decisions and identify missing information.
+
+**Action-Oriented Learning**  
+Organise research and next steps into a practical 90-day plan.
+
+Use a professional, restrained design. Do not invent testimonials, student results, accreditations, or success statistics.
+
+## 10. Trainer Section — Rahul Waghmare
+
+Create a professional trainer profile section with:
+
+- Portrait placeholder for Rahul Waghmare
+- Name: Rahul Waghmare
+- Role: EXIM Trainer / SIM — confirm the exact approved designation
+- Short biography based on the institute's approved profile
+- Relevant professional experience and expertise, once confirmed
+
+The supplied profile contains inconsistent total-experience figures: 16+ years in one place and 18+ years elsewhere.
+
+Therefore:
+- Do not choose or invent a number.
+- Use the placeholder **[CONFIRM YEARS OF EXPERIENCE]** until SIM verifies the correct figure.
+- Do not invent qualifications, certifications, company roles, or achievements.
+- Design the section so a verified experience figure can later be displayed as a large numerical highlight.
+
+## 11. Final Call-to-Action Section
+
+Create a full-width dark navy section with white text and a blue CTA button.
+
+Headline:
+**Ready to Understand the EXIM Process?**
+
+Supporting text:
+“Explore the course curriculum and discuss your learning goals with Skills Institute of Management.”
+
+Button:
+**Request Course Details**
+
+The button should smoothly scroll to the enquiry form.
+
+## 12. FAQ Section
+
+Use an accessible accordion component with these questions:
+
+1. What is the EXIM course about?
+2. Who can enrol in this course?
+3. What topics are covered in the curriculum?
+4. Does the course include practical exercises?
+5. How can I get the upcoming batch schedule and fees?
+6. How do I request counselling?
+7. Does the course guarantee buyers, orders, profits, or placement?
+
+Answer the last question transparently: the course provides structured learning and practical exercises; actual business, employment, and commercial outcomes are not guaranteed unless SIM has a specific, documented policy stating otherwise.
+
+For batch dates, duration, fees, mode, location, certificate, and placement support, use clear placeholders until the institute confirms the details.
+
+## 13. Footer
+
+Include:
+
+- SIM logo placeholder
+- Skills Institute of Management
+- Quick links
+- EXIM Course
+- Contact information placeholders
+- Phone / WhatsApp placeholder
+- Email placeholder
+- Social media link placeholders
+- Privacy Policy
+- Terms and Conditions
+
+Do not invent phone numbers, email addresses, physical addresses, or social profiles.
+
+## 14. Functional and Technical Requirements
+
+Build the landing page as a production-minded, responsive website.
+
+- Use reusable components and clean code.
+- Ensure responsive layouts for desktop, tablet, and mobile.
+- Use semantic HTML and accessible form labels.
+- Include visible keyboard focus states.
+- Ensure sufficient text/background contrast.
+- Add smooth scrolling for internal CTAs.
+- Make the mobile navigation, curriculum accordion, FAQ accordion, and date picker functional.
+- Optimise images and avoid unnecessarily large assets.
+- Include basic SEO title, meta description, and heading hierarchy.
+- Avoid layout shifts and horizontal scrolling on mobile.
+- Do not invent live appointment availability.
+- Do not claim that a form submission succeeded without a working submission endpoint.
+- If building with React, use clean reusable components and a sensible file structure.
+- If using plain HTML/CSS/JavaScript, keep code modular and well organised.
+
+## 15. Final Design Standard
+
+The final result should look like a professionally designed training-business landing page that could be presented to the SIM client.
+
+Prioritise:
+1. Clear value proposition
+2. Strong visual hierarchy
+3. Prominent but trustworthy statistics
+4. Easy-to-use enquiry form with a working calendar
+5. Scannable ten-module curriculum
+6. Practical EXIM workflow visualisation
+7. Verified trainer information
+8. Strong conversion-focused CTAs
+
+Use the attached PDF as the content and layout reference. Build the **EXIM course landing page only** at this stage. Do not create the other website pages until this landing page has been reviewed and approved.
+
+Before final delivery, list any details that still require confirmation from SIM.
