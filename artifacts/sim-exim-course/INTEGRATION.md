@@ -13,4 +13,4 @@ The form is a front-end enquiry interface only. It validates the entered details
 5. Show submission success only after the endpoint confirms it accepted the enquiry. Show a clear failure state if the request fails, and avoid discarding the entered details on failure.
 6. Confirm SIM's privacy notice and retention policy before storing or forwarding personal information.
 
-No destination address, phone number, CRM, or form endpoint was supplied with the brief.
+SIM has supplied a public contact phone number (+91 98206 33814) and email address (sim639212@gmail.com), which are linked in the page for visitors to contact the institute directly. The form still has no submission endpoint or connected CRM, so form entries are not transmitted.

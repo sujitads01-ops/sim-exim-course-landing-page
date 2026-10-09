@@ -5,6 +5,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import NotFound from '@/pages/not-found';
 import { Route, Switch, useLocation, Router as WouterRouter } from 'wouter';
+import simLogo from '@assets/WEBSITE-HEAD_1791545018241.png';
 import {
   ArrowDownRight, ArrowRight, BadgeCheck, BookOpen, BriefcaseBusiness, Check, ChevronDown,
   CircleHelp, Globe2, Menu, PackageSearch, ShieldCheck, Ship, X,
@@ -36,7 +37,7 @@ const faqs = [
 
 function Brand() {
   return <a className="brand" href="#home" aria-label="Skills Institute of Management home" data-testid="link-home-logo">
-    <span className="brand-mark">SIM</span><span className="brand-words"><strong>Skills Institute</strong><span>of Management</span></span>
+    <img src={simLogo} alt="" width="689" height="295" className="brand-logo" />
   </a>;
 }
 
@@ -87,7 +88,7 @@ function Home() {
     }
     // Integration point: submit validated values to SIM's approved email, CRM,
     // WhatsApp, or database service here; do not report success until confirmed.
-    setFormStatus('Your details have not been sent. This enquiry form is not connected yet; please contact SIM directly once contact details are published.');
+    setFormStatus('Your details have not been sent. This enquiry form is not connected yet. Please contact SIM by phone or email below.');
   };
 
   const navItems = [['Home', '#home'], ['About SIM', '#about'], ['EXIM Course', '#course'], ['Course Curriculum', '#curriculum'], ['Trainer', '#trainer'], ['Contact', '#contact']];
@@ -159,7 +160,7 @@ function Home() {
           <label className="consent"><input required type="checkbox" checked={values.consent} onChange={(e) => update('consent', e.target.checked)} aria-invalid={!!formErrors.consent} data-testid="checkbox-contact-consent" /><span>I consent to be contacted about course information. <em>*</em>{formErrors.consent && <span className="form-error" role="alert">{formErrors.consent}</span>}</span></label>
           <button className="button form-submit" type="submit" data-testid="button-request-details">Request Course Details <ArrowRight size={16} /></button>
           {formStatus && <div className="form-status" role="status" aria-live="polite" data-testid="status-form">{formStatus}</div>}
-          <div className="form-disclaimer"><ShieldCheck size={14} /> Your information stays in this browser and is not transmitted. Backend connection is required before enquiries can be received.</div>
+          <div className="form-disclaimer"><ShieldCheck size={14} /><span>Your information stays in this browser and is not transmitted. To enquire now, call <a href="tel:+919820633814">+91 98206 33814</a> or email <a href="mailto:sim639212@gmail.com">sim639212@gmail.com</a>. Form submissions need a separate service connection.</span></div>
         </form>
       </div>
     </section>
@@ -218,9 +219,13 @@ function Home() {
       <div className="wrap">
         <div className="trainer-card">
           <div className="portrait" role="img" aria-label="Portrait placeholder for Rahul Waghmare" data-testid="image-trainer-placeholder"><div className="portrait-head" /><div className="portrait-silhouette" /><span className="portrait-label">Portrait to be supplied</span></div>
-          <div><div className="section-kicker">Meet your trainer</div><h2 className="trainer-name">Rahul Waghmare</h2><div className="trainer-role">EXIM Trainer / SIM <span>· exact approved designation to be confirmed</span></div>
-            <p className="trainer-copy">Rahul Waghmare’s approved profile and professional biography are pending confirmation. We will share verified experience and relevant expertise here when supplied by SIM.</p>
-            <div className="trainer-facts"><span className="fact-number">[CONFIRM YEARS OF EXPERIENCE]</span><span>Experience figure pending institute confirmation</span></div>
+          <div><div className="section-kicker">About the Mentor</div><h2 className="trainer-name">Rahul Waghmare</h2>
+            <h3 className="trainer-subtitle">From Early Beginnings to EXIM Expertise</h3>
+            <div className="trainer-role">EXIM Professional <span>|</span> Exporter <span>|</span> Consultant &amp; Mentor</div>
+            <p className="trainer-copy">Rahul Waghmare is an EXIM professional, exporter, consultant, and mentor with 16+ years of professional experience in import–export documentation, international trade, corporate operations, and entrepreneurship.</p>
+            <p className="trainer-copy">His journey began in 2010 while he was in 10th standard. After gaining practical experience and completing his graduation in 2015, he joined an MNC in 2016 and later started his own import–export business.</p>
+            <p className="trainer-copy">Recognizing the gap between theoretical learning and industry practice, he founded Skills Institute of Management (SIM) in 2024 to help students and aspiring entrepreneurs build practical EXIM skills and industry-ready careers.</p>
+            <div className="trainer-facts"><span className="fact-number">16+ years</span><span>Professional experience across documentation, trade, corporate operations, and entrepreneurship</span></div>
           </div>
         </div>
       </div>
@@ -243,10 +248,14 @@ function Home() {
 
     <footer className="footer" id="contact">
       <div className="wrap footer-main">
-        <div className="footer-brand-block"><Brand /><p className="footer-about">Practical learning for people building a clearer understanding of global trade. Course information and contact details will be confirmed by SIM.</p></div>
+        <div className="footer-brand-block"><Brand /><p className="footer-about">Practical learning for people building a clearer understanding of global trade. Contact SIM for current course information.</p></div>
         <div><h4>Explore</h4><div className="footer-links"><a href="#about">About SIM</a><a href="#course">EXIM Course</a><a href="#curriculum">Course Curriculum</a><a href="#trainer">Trainer</a></div></div>
-        <div><h4>Contact SIM</h4><div className="footer-links"><span className="contact-placeholder">Phone / WhatsApp<br />[CONTACT DETAILS TO BE CONFIRMED]</span><span className="contact-placeholder">Email<br />[EMAIL TO BE CONFIRMED]</span><span className="contact-placeholder">Address<br />[ADDRESS TO BE CONFIRMED]</span></div></div>
-        <div><h4>Stay connected</h4><div className="footer-links"><span>[SOCIAL MEDIA LINK TO BE CONFIRMED]</span><span>[SOCIAL MEDIA LINK TO BE CONFIRMED]</span><a href="#enquiry">Request course details</a></div></div>
+        <div><h4>Contact SIM</h4><div className="footer-links">
+          <a className="contact-placeholder" href="tel:+919820633814" data-testid="link-contact-phone">Phone<br />+91 98206 33814</a>
+          <a className="contact-placeholder" href="mailto:sim639212@gmail.com" data-testid="link-contact-email">Email<br />sim639212@gmail.com</a>
+          <address className="contact-placeholder">Address<br />5, Police Station Rd, Gandhi Nagar Society, Bandrekar Wadi, Jogeshwari East, Mumbai, Maharashtra 400060</address>
+        </div></div>
+        <div><h4>Stay connected</h4><div className="footer-links"><span className="contact-placeholder">Social profiles to be confirmed</span><a href="#enquiry">Request course details</a></div></div>
       </div>
       <div className="wrap footer-bottom"><span>© {new Date().getFullYear()} Skills Institute of Management</span><div className="footer-legal"><a href="#contact" data-testid="link-privacy-policy">Privacy Policy</a><a href="#contact" data-testid="link-terms">Terms and Conditions</a></div></div>
     </footer>
