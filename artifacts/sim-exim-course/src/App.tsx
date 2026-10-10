@@ -6,6 +6,8 @@ import { TooltipProvider } from '@/components/ui/tooltip';
 import NotFound from '@/pages/not-found';
 import { Route, Switch, useLocation, Router as WouterRouter } from 'wouter';
 import simLogo from '@assets/WEBSITE-HEAD_1791545018241.png';
+import shipPhoto from '@assets/673_1791631414643.jpg';
+import moneyBackBadge from '@assets/saleeee_1791631498721.png';
 import {
   ArrowDownRight, ArrowRight, BadgeCheck, BookOpen, BriefcaseBusiness, Check, ChevronDown,
   CircleHelp, Globe2, Menu, MessageCircle, PackageSearch, ShieldCheck, Ship, X,
@@ -117,14 +119,11 @@ function Home() {
           </div>
           <div className="hero-note"><span className="hero-note-icon"><BadgeCheck size={15} /></span><span>Learn the key stages of an import–export transaction through structured modules and a practical trade simulation.</span></div>
         </div>
-        <div className="hero-visual" aria-label="Illustration of a container ship moving cargo through international trade routes" role="img" data-testid="visual-trade-shipment">
+        <div className="hero-visual" data-testid="visual-trade-shipment">
           <div className="visual-frame">
-            <div className="sun-disc" /><div className="cloud-lines" /><div className="route-line" /><div className="port-label">TRADE ROUTE · 01</div>
-            <div className="ship">
-              <div className="container c1" /><div className="container c2" /><div className="container c3" /><div className="container c4" /><div className="container c5" />
-              <div className="ship-deck" /><div className="ship-hull" />
-            </div>
+            <img className="hero-ship-photo" src={shipPhoto} alt="Container ship loaded with cargo sailing through the water" width="2000" height="1124" fetchPriority="high" />
           </div>
+          <img className="money-back-badge" src={moneyBackBadge} alt="100% money back guaranteed badge" width="1000" height="1009" data-testid="image-money-back-guarantee" />
           <div className="visual-stamp"><span className="stamp-mark"><Ship size={17} /></span><div><strong>From first question to shipment flow</strong><span>Trade concepts. Connected in practice.</span></div></div>
           <span className="hero-index">SIM / EXIM · COURSE OVERVIEW</span>
         </div>
