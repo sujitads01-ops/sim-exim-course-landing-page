@@ -8,7 +8,7 @@ import { Route, Switch, useLocation, Router as WouterRouter } from 'wouter';
 import simLogo from '@assets/WEBSITE-HEAD_1791545018241.png';
 import {
   ArrowDownRight, ArrowRight, BadgeCheck, BookOpen, BriefcaseBusiness, Check, ChevronDown,
-  CircleHelp, Globe2, Menu, PackageSearch, ShieldCheck, Ship, X,
+  CircleHelp, Globe2, Menu, MessageCircle, PackageSearch, ShieldCheck, Ship, X,
 } from 'lucide-react';
 
 const queryClient = new QueryClient();
@@ -260,6 +260,17 @@ function Home() {
       <div className="wrap footer-bottom"><span>© {new Date().getFullYear()} Skills Institute of Management</span><div className="footer-legal"><a href="#contact" data-testid="link-privacy-policy">Privacy Policy</a><a href="#contact" data-testid="link-terms">Terms and Conditions</a></div></div>
     </footer>
     <div className="mobile-cta"><a className="button" href="#enquiry" data-testid="link-mobile-enquire">Enquire About the Course <ArrowRight size={16} /></a></div>
+    <a
+      className="whatsapp-float"
+      href="https://wa.me/919820633814?text=Hi%2C%20I%27m%20interested%20in%20the%20SIM%20EXIM%20Course."
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Talk to SIM on WhatsApp at +91 98206 33814"
+      data-testid="link-whatsapp-floating"
+    >
+      <span className="whatsapp-float-icon" aria-hidden="true"><MessageCircle size={22} /></span>
+      <span className="whatsapp-float-copy"><span>Talk to us on WhatsApp</span><strong>+91 98206 33814</strong></span>
+    </a>
   </main>;
 }
 

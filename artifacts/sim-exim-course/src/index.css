@@ -84,6 +84,14 @@
 .trainer-copy { margin-top:14px; }
 .contact-placeholder { overflow-wrap:anywhere;font-style:normal; }
 .form-disclaimer a { color:#1769aa;font-weight:700;text-underline-offset:2px; }
+.whatsapp-float { position:fixed;z-index:35;right:24px;bottom:24px;display:flex;align-items:center;gap:12px;min-width:236px;padding:10px 18px 10px 10px;border:1px solid #148642;border-radius:999px;color:#fff;background:#168c45;box-shadow:0 10px 30px #102a4330;text-decoration:none;transition:transform .16s,box-shadow .16s; }
+.whatsapp-float:hover { transform:translateY(-2px);box-shadow:0 14px 32px #102a4340; }
+.whatsapp-float:focus-visible { outline:3px solid #102a43;outline-offset:3px; }
+.whatsapp-float-icon { display:grid;width:40px;height:40px;flex:none;place-items:center;border-radius:50%;color:#fff;background:#ffffff20; }
+.whatsapp-float-copy { display:grid;gap:2px;line-height:1.2;white-space:nowrap; }
+.whatsapp-float-copy span { font-size:11px;font-weight:600;opacity:.92; }
+.whatsapp-float-copy strong { font-size:13px;font-weight:800; }
+@media(max-width:760px) { .whatsapp-float { right:14px;bottom:calc(74px + env(safe-area-inset-bottom));min-width:0;max-width:calc(100vw - 28px);padding:9px 13px 9px 9px; }.whatsapp-float-icon { width:37px;height:37px; }.whatsapp-float-copy span { font-size:10px; }.whatsapp-float-copy strong { font-size:12px; } }
 @keyframes reveal { from { opacity:0;transform:translateY(-4px); } to { opacity:1;transform:translateY(0); } }
 @media(max-width:960px) { .nav{gap:13px}.nav a{font-size:11px}.header-inner>.button{padding-inline:14px}.hero-grid{gap:35px}.hero-visual{min-height:405px}.enquiry-grid{gap:40px}.audience-grid{grid-template-columns:repeat(2,1fr)}.curriculum-layout{gap:38px}.footer-main{gap:30px} }
 @media(max-width:760px) {
