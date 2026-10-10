@@ -123,7 +123,6 @@ function Home() {
           <div className="visual-frame">
             <img className="hero-ship-photo" src={shipPhoto} alt="Container ship loaded with cargo sailing through the water" width="2000" height="1124" fetchPriority="high" />
           </div>
-          <img className="money-back-badge" src={moneyBackBadge} alt="100% money back guaranteed badge" width="1000" height="1009" data-testid="image-money-back-guarantee" />
           <div className="visual-stamp"><span className="stamp-mark"><Ship size={17} /></span><div><strong>From first question to shipment flow</strong><span>Trade concepts. Connected in practice.</span></div></div>
           <span className="hero-index">SIM / EXIM · COURSE OVERVIEW</span>
         </div>
@@ -259,17 +258,20 @@ function Home() {
       <div className="wrap footer-bottom"><span>© {new Date().getFullYear()} Skills Institute of Management</span><div className="footer-legal"><a href="#contact" data-testid="link-privacy-policy">Privacy Policy</a><a href="#contact" data-testid="link-terms">Terms and Conditions</a></div></div>
     </footer>
     <div className="mobile-cta"><a className="button" href="#enquiry" data-testid="link-mobile-enquire">Enquire About the Course <ArrowRight size={16} /></a></div>
-    <a
-      className="whatsapp-float"
-      href="https://wa.me/919820633814?text=Hi%2C%20I%27m%20interested%20in%20the%20SIM%20EXIM%20Course."
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Talk to SIM on WhatsApp at +91 98206 33814"
-      data-testid="link-whatsapp-floating"
-    >
-      <span className="whatsapp-float-icon" aria-hidden="true"><MessageCircle size={22} /></span>
-      <span className="whatsapp-float-copy"><span>Talk to us on WhatsApp</span><strong>+91 98206 33814</strong></span>
-    </a>
+    <div className="whatsapp-contact-stack">
+      <img className="money-back-badge" src={moneyBackBadge} alt="100% money back guaranteed badge" width="1000" height="1009" data-testid="image-money-back-guarantee" />
+      <a
+        className="whatsapp-float"
+        href="https://wa.me/919820633814?text=Hi%2C%20I%27m%20interested%20in%20the%20SIM%20EXIM%20Course."
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Talk to SIM on WhatsApp at +91 98206 33814"
+        data-testid="link-whatsapp-floating"
+      >
+        <span className="whatsapp-float-icon" aria-hidden="true"><MessageCircle size={22} /></span>
+        <span className="whatsapp-float-copy"><span>Talk to us on WhatsApp</span><strong>+91 98206 33814</strong></span>
+      </a>
+    </div>
   </main>;
 }
 
