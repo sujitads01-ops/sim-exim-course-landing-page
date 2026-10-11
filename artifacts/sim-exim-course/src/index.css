@@ -131,10 +131,21 @@
 #root .site-shell .curriculum-count strong,
 #root .site-shell .module-num,
 #root .site-shell .step-no,
-#root .site-shell .fact-number {
+#root .site-shell .step-label,
+#root .site-shell .benefit-num,
+#root .site-shell .fact-number,
+#root .site-shell .number-text,
+#root .site-shell .whatsapp-float-copy strong,
+#root .site-shell input[type="tel"],
+#root .site-shell input[type="date"] {
   font-family:'Inter',sans-serif;
   font-variant-numeric:lining-nums tabular-nums;
 }
 #root .site-shell .proof-value { width:100%;text-align:center; }
 #root .site-shell .proof-copy { min-width:0;text-align:left; }
+#root .site-shell .audience-card h3,
+#root .site-shell .benefit h3,
+#root .site-shell .trainer-subtitle,
+#root .site-shell .footer h4 { font-size:18px; }
+#root .site-shell .whatsapp-float-copy strong { font-size:18px; }
 @media(max-width:760px) { #root .site-shell .proof-item { grid-template-columns:112px minmax(0,1fr); } }

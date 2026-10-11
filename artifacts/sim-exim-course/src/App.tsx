@@ -117,7 +117,7 @@ function Home() {
         <div>
           <div className="eyebrow">Practical Import–Export &amp; EXIM Training</div>
           <h1>Learn Global Trade. <span>Build Your EXIM Business Foundation.</span></h1>
-          <p className="hero-copy">A structured, practical course to understand the export–import process—from choosing a product and researching markets to buyer verification, documentation, shipping, costing and building a 90-day action plan.</p>
+          <p className="hero-copy">A structured, practical course to understand the export–import process—from choosing a product and researching markets to buyer verification, documentation, shipping, costing and building a <span className="number-text">90</span>-day action plan.</p>
           <div className="hero-actions">
             <a className="button" href="#enquiry" data-testid="link-hero-enquire">Enquire About the Course <ArrowRight size={16} /></a>
             <a className="button button-outline" href="#curriculum" data-testid="link-explore-curriculum">Explore Course Curriculum <ArrowDownRight size={16} /></a>
@@ -163,7 +163,7 @@ function Home() {
           <label className="consent"><input required type="checkbox" checked={values.consent} onChange={(e) => update('consent', e.target.checked)} aria-invalid={!!formErrors.consent} data-testid="checkbox-contact-consent" /><span>I consent to be contacted about course information. <em>*</em>{formErrors.consent && <span className="form-error" role="alert">{formErrors.consent}</span>}</span></label>
           <button className="button form-submit" type="submit" data-testid="button-request-details">Request Course Details <ArrowRight size={16} /></button>
           {formStatus && <div className="form-status" role="status" aria-live="polite" data-testid="status-form">{formStatus}</div>}
-          <div className="form-disclaimer"><ShieldCheck size={14} /><span>Your information stays in this browser and is not transmitted. To enquire now, call <a href="tel:+919820633814">+91 98206 33814</a> or email <a href="mailto:sim639212@gmail.com">sim639212@gmail.com</a>. Form submissions need a separate service connection.</span></div>
+          <div className="form-disclaimer"><ShieldCheck size={14} /><span>Your information stays in this browser and is not transmitted. To enquire now, call <a href="tel:+919820633814"><span className="number-text">+91 98206 33814</span></a> or email <a href="mailto:sim639212@gmail.com"><span className="number-text">sim639212@gmail.com</span></a>. Form submissions need a separate service connection.</span></div>
         </form>
       </div>
     </section>
@@ -213,7 +213,7 @@ function Home() {
           <article className="benefit"><span className="benefit-num">01</span><div><h3>Structured Learning Path</h3><p>Move through core EXIM concepts in a clear sequence.</p></div></article>
           <article className="benefit"><span className="benefit-num">02</span><div><h3>Process-Based Understanding</h3><p>Connect product research, partner checks, documentation, logistics, and costing.</p></div></article>
           <article className="benefit"><span className="benefit-num">03</span><div><h3>Applied Practice</h3><p>Use a sample transaction scenario to practise decisions and identify missing information.</p></div></article>
-          <article className="benefit"><span className="benefit-num">04</span><div><h3>Action-Oriented Learning</h3><p>Organise research and next steps into a practical 90-day plan.</p></div></article>
+          <article className="benefit"><span className="benefit-num">04</span><div><h3>Action-Oriented Learning</h3><p>Organise research and next steps into a practical <span className="number-text">90</span>-day plan.</p></div></article>
         </div>
       </div>
     </section>
@@ -225,9 +225,9 @@ function Home() {
           <div><div className="section-kicker">About the Mentor</div><h2 className="trainer-name">Rahul Waghmare</h2>
             <h3 className="trainer-subtitle">From Early Beginnings to EXIM Expertise</h3>
             <div className="trainer-role">EXIM Professional <span>|</span> Exporter <span>|</span> Consultant &amp; Mentor</div>
-            <p className="trainer-copy">Rahul Waghmare is an EXIM professional, exporter, consultant, and mentor with 16+ years of professional experience in import–export documentation, international trade, corporate operations, and entrepreneurship.</p>
-            <p className="trainer-copy">His journey began in 2010 while he was in 10th standard. After gaining practical experience and completing his graduation in 2015, he joined an MNC in 2016 and later started his own import–export business.</p>
-            <p className="trainer-copy">Recognizing the gap between theoretical learning and industry practice, he founded Skills Institute of Management (SIM) in 2024 to help students and aspiring entrepreneurs build practical EXIM skills and industry-ready careers.</p>
+            <p className="trainer-copy">Rahul Waghmare is an EXIM professional, exporter, consultant, and mentor with <span className="number-text">16+</span> years of professional experience in import–export documentation, international trade, corporate operations, and entrepreneurship.</p>
+            <p className="trainer-copy">His journey began in <span className="number-text">2010</span> while he was in <span className="number-text">10th</span> standard. After gaining practical experience and completing his graduation in <span className="number-text">2015</span>, he joined an MNC in <span className="number-text">2016</span> and later started his own import–export business.</p>
+            <p className="trainer-copy">Recognizing the gap between theoretical learning and industry practice, he founded Skills Institute of Management (SIM) in <span className="number-text">2024</span> to help students and aspiring entrepreneurs build practical EXIM skills and industry-ready careers.</p>
             <div className="trainer-facts"><span className="fact-number">16+ years</span><span>Professional experience across documentation, trade, corporate operations, and entrepreneurship</span></div>
           </div>
         </div>
@@ -254,13 +254,13 @@ function Home() {
         <div className="footer-brand-block"><Brand /><p className="footer-about">Practical learning for people building a clearer understanding of global trade. Contact SIM for current course information.</p></div>
         <div><h4>Explore</h4><div className="footer-links"><a href="#about">About SIM</a><a href="#course">EXIM Course</a><a href="#curriculum">Course Curriculum</a><a href="#trainer">Trainer</a></div></div>
         <div><h4>Contact SIM</h4><div className="footer-links">
-          <a className="contact-placeholder" href="tel:+919820633814" data-testid="link-contact-phone">Phone<br />+91 98206 33814</a>
-          <a className="contact-placeholder" href="mailto:sim639212@gmail.com" data-testid="link-contact-email">Email<br />sim639212@gmail.com</a>
-          <address className="contact-placeholder">Address<br />5, Police Station Rd, Gandhi Nagar Society, Bandrekar Wadi, Jogeshwari East, Mumbai, Maharashtra 400060</address>
+          <a className="contact-placeholder" href="tel:+919820633814" data-testid="link-contact-phone">Phone<br /><span className="number-text">+91 98206 33814</span></a>
+          <a className="contact-placeholder" href="mailto:sim639212@gmail.com" data-testid="link-contact-email">Email<br /><span className="number-text">sim639212@gmail.com</span></a>
+          <address className="contact-placeholder">Address<br /><span className="number-text">5</span>, Police Station Rd, Gandhi Nagar Society, Bandrekar Wadi, Jogeshwari East, Mumbai, Maharashtra <span className="number-text">400060</span></address>
         </div></div>
         <div><h4>Stay connected</h4><div className="footer-links"><span className="contact-placeholder">Social profiles to be confirmed</span><a href="#enquiry">Request course details</a></div></div>
       </div>
-      <div className="wrap footer-bottom"><span>© {new Date().getFullYear()} Skills Institute of Management</span><div className="footer-legal"><a href="#contact" data-testid="link-privacy-policy">Privacy Policy</a><a href="#contact" data-testid="link-terms">Terms and Conditions</a></div></div>
+      <div className="wrap footer-bottom"><span>© <span className="number-text">{new Date().getFullYear()}</span> Skills Institute of Management</span><div className="footer-legal"><a href="#contact" data-testid="link-privacy-policy">Privacy Policy</a><a href="#contact" data-testid="link-terms">Terms and Conditions</a></div></div>
     </footer>
     <div className="mobile-cta"><a className="button" href="#enquiry" data-testid="link-mobile-enquire">Enquire About the Course <ArrowRight size={16} /></a></div>
     <div className="whatsapp-contact-stack">
