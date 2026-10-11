@@ -8,6 +8,8 @@ import { Route, Switch, useLocation, Router as WouterRouter } from 'wouter';
 import simLogo from '@assets/WEBSITE-HEAD_1791545018241.png';
 import shipPhoto from '@assets/673_1791631414643.jpg';
 import moneyBackBadge from '@assets/saleeee_1791631498721.png';
+import rahulPortrait from '@assets/Professional_Portrait_in_White_Shirt_1791715275919.png';
+import heroBackgroundPhoto from '@assets/1072_1791715455292.jpg';
 import {
   ArrowDownRight, ArrowRight, BadgeCheck, BookOpen, BriefcaseBusiness, Check, ChevronDown,
   CircleHelp, Globe2, Menu, MessageCircle, PackageSearch, ShieldCheck, Ship, X,
@@ -108,6 +110,9 @@ function Home() {
     </header>
 
     <section className="hero" id="home">
+      <div className="hero-backdrop" aria-hidden="true">
+        <img className="hero-backdrop-photo" src={heroBackgroundPhoto} alt="" width="1500" height="999" decoding="async" />
+      </div>
       <div className="wrap hero-grid">
         <div>
           <div className="eyebrow">Practical Import–Export &amp; EXIM Training</div>
@@ -216,7 +221,7 @@ function Home() {
     <section className="section trainer" id="trainer">
       <div className="wrap">
         <div className="trainer-card">
-          <div className="portrait" role="img" aria-label="Portrait placeholder for Rahul Waghmare" data-testid="image-trainer-placeholder"><div className="portrait-head" /><div className="portrait-silhouette" /><span className="portrait-label">Portrait to be supplied</span></div>
+          <div className="portrait" data-testid="image-trainer"><img className="portrait-photo" src={rahulPortrait} alt="Rahul Waghmare, EXIM Professional, Exporter, Consultant and Mentor" width="1145" height="1374" loading="lazy" decoding="async" /></div>
           <div><div className="section-kicker">About the Mentor</div><h2 className="trainer-name">Rahul Waghmare</h2>
             <h3 className="trainer-subtitle">From Early Beginnings to EXIM Expertise</h3>
             <div className="trainer-role">EXIM Professional <span>|</span> Exporter <span>|</span> Consultant &amp; Mentor</div>
