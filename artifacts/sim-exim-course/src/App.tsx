@@ -136,9 +136,9 @@ function Home() {
 
     <section className="proof-band" id="course" aria-label="Course structure at a glance">
       <div className="wrap proof-grid">
-        <div className="proof-item" data-testid="stat-core-modules"><div className="proof-value">10</div><div><strong>Core Learning Modules</strong><span>A clear sequence through EXIM essentials</span></div></div>
-        <div className="proof-item" data-testid="stat-action-plan"><div className="proof-value">90 Days</div><div><strong>Action Plan Framework</strong><span>Organise research and next steps</span></div></div>
-        <div className="proof-item" data-testid="stat-simulation"><div className="proof-value">Practical</div><div><strong>EXIM Business Simulation</strong><span>Apply ideas to a sample trade scenario</span></div></div>
+        <div className="proof-item" data-testid="stat-core-modules"><div className="proof-value">10</div><div className="proof-copy"><strong>Core Learning Modules</strong><span>A clear sequence through EXIM essentials</span></div></div>
+        <div className="proof-item" data-testid="stat-action-plan"><div className="proof-value">90 Days</div><div className="proof-copy"><strong>Action Plan Framework</strong><span>Organise research and next steps</span></div></div>
+        <div className="proof-item" data-testid="stat-simulation"><div className="proof-value">Practical</div><div className="proof-copy"><strong>EXIM Business Simulation</strong><span>Apply ideas to a sample trade scenario</span></div></div>
       </div>
     </section>
 
